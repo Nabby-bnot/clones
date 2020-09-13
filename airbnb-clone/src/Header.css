@@ -1,0 +1,42 @@
+.header{
+    display: flex; /*To create boxes around every element*/
+    justify-content: space-between; /*To create as much spcaing as possible*/
+    align-items: center;
+    position: sticky; /*To make the top stick while scrolling down*/
+    background-color: white;
+    z-index: 100; /*to keep all above everything*/
+    width: 100%;
+    top: 0;
+}
+
+
+.header_icon{
+    object-fit: contain;
+    height: 110px;
+    margin-left: 20px;
+    padding: 10px;
+    height: 60px;
+}
+
+.header_center{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    max-width: fit-content;
+    border: 1px solid lightgrey;
+    border-radius: 999px;
+}
+
+.header_center > input{
+    border: none;
+    padding: 10px;
+    outline-width: 0; /*for removing the search text box outline*/
+}
+
+.header_right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 17vw;
+    margin-right: 80px;
+}
